@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navigation{
+    height: 10vh;
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+
+.nav-links{
+    height: 10vh;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.nav-links a{
+    font-family: "Righteous", sans-serif;
+    text-decoration: double;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    color: black;
+    position: relative;
+}
+
+.nav-links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.nav-links a:hover:after{
+    width: 100%;
+}
+
+
+.nav-logo{
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+header{
+    text-align: center;
+}
+
+
+.album-title{
+    font-size: 6em;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+}
+
+
+.subtitle{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.822)
+    
+}
+
+
+.container, .container-2{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(247, 255, 240);
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px 5px rgb(25, 17, 17);
+    border-radius: 20px;
+}
+
+.container img, .container-2 img{
+    transition: height 0.7s ease-in 0.2s
+}
+
+.container img:hover, .container-2 img:hover{
+    height: 85%;
+}
+
+
+.caption{
+    font-size: 18px;
+    color: lightseagreen;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+
+table, th, td{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+
+table th{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.lorem{
+    padding: 0 0 60px 100px;
+    margin: 0 0 60px 100px;
+}
+
+
+.group{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+}
+
+
+.group:hover{
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+
+
+.para::first-letter{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.sect{
+    height: 50vh;
+    position: relative;
+  }
+
+.sect::before{
+    content: "";
+    background-image: url(image\ 2.jpg);
+    background-size: cover;
+    filter: blur(4px);
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+
+}
+/* 
+  .div-container{
+    background-image: url(image\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  
+  @media screen and (max-width: 480px) {
+    .navigation{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .sidenav {padding-top: 15px;
+        display: none;
+    }
+    .sidenav a {font-size: 18px;
+        display: none;
+    }
+    .open-nav12{
+        display: none;
+    }
+    .container-2{
+        display: none;
+    }
+    .img-h2{
+        display: none;
+    }
+    .open-nav12 a{
+        display: none;
+    }
+  }
+
+.sidenav {
+    height: 50%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: beige;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    font-family: "Righteous", sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+  }
+
+  .sidenav a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.sidenav a:hover:after{
+    width: 50%;
+}
+  
+  .sidenav a:hover {
+    color: black;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.open-nav12{
+    display: flex;
+    background-color: beige;
+    top: 0;
+    align-items: center;
+    height: 9vh;
+    z-index: 1;
+  }
+
+
