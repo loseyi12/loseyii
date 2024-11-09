@@ -24,11 +24,11 @@
 </head>
 <body>
 
-<!-- Navigation bar -->
+<!-- large screen navigation bar -->
 <nav class="navigation">
 
     <div style="display: flex; height: 9vh; align-items: center;">
-        <img src="photo_1-removebg-preview (2).png" alt="" width="80px" height="80px" style="object-fit: cover;">
+        <img src="photo_1-removebg-preview (2).png" alt="" width="70px" height="70px" style="object-fit: cover;">
         <h2 style="font-family: Righteous, sans-serif;">BEACHES</h2>
     </div>
 
@@ -41,7 +41,8 @@
     </ul>
 </nav>
 
-<!-- Navigation bar for mobile view -->
+
+<!-- mobile view navigation bar -->
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">Home <i><i><i class="fa-solid fa-house"></i></i></i></a>
@@ -49,16 +50,18 @@
     <a href="#">Services <i><i><i class="fa-brands fa-servicestack"></i></i></i></a>
     <a href="#">Contact <i><i><i class="fa-regular fa-id-badge"></i></i></i></a>
 </div>
+<div id="mobile" style="display: flex; align-items: center;" class="open-nav12">
+    <div style="font-size:30px;cursor:pointer" onclick="openNav()" class="mobile">&#9776;
 
-<div class="open-nav12" onclick="openNav()">
-    <img src="photo_1-removebg-preview (2).png" alt="" width="80px" height="80px" style="object-fit: cover;" class="img-h2">
-    <h2 style="font-family: Righteous, sans-serif;" class="img-h2">BEACHES</h2>
-    &#9776;
+    </div>
+    <span class="mobile" style="display: flex; align-items: center;">
+        <img src="photo_1-removebg-preview (2).png" alt="" width="70px" height="70px" style="object-fit: cover;" class="mobile">
+        <h2 style="font-family: Righteous, sans-serif;" class="mobile">BEACHES</h2>
+    </span>
 </div>
 
 
-
-<!-- script mv -->
+<!-- mobile view script -->
 <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
@@ -70,20 +73,33 @@
 </script>
 
 
-<!-- Photo album header -->
- <section class="sect">
-    <header>
-        <h1 class="album-title">
+<!-- Landing section -->
+ <section class="landing" style="background-image: url(image\ 4.jpg); background-size: cover;">
+    <div>
+        <h1 class="text1 slide">
             BEACHES
         </h1>
-        <p class="subtitle">
+        <p class="text2 slide">wonderful placs that offer a mix of relaxation, and natural beauty</p>
+
+        <a href="/" class="landing-btn slide">
+            <button class="bn54">
+                <span class="bn54span">Explore services</span>
+            </button>
+        </a>
+    </div>
+ </section>
+
+
+<!-- Photo album header -->
+    <header>
+        <h1 class="album-title">
             moment captured by loseyi
-        </p>
+        </h1>
     </header>
-</section>
+
 
 <!-- Photo album container -->
-    <div style="display: flex; justify-content: center;" class="div-container">
+    <div style="margin-top: 10px;" class="div-container">
         <div class="container">
             <img src="rockes b.jpg" alt="beach" width="100%" height="82%" style="object-fit: cover;">
             <p class="caption">ROCKES BEACH</p>
@@ -105,8 +121,9 @@
         </div>
     </div>
 
+
 <!-- Photo album container 2 -->
-    <div  style="display: flex; justify-content: center;" class="div-container">
+    <div  style="margin-bottom: 50px; margin-top: 10px;" class="div-container">
         <div class="container">
             <img src="tidal flat b.jpg" alt="beach" width="100%" height="82%" style="object-fit: cover;">
             <p class="caption">TIDAL FLAT BEACH</p>
@@ -128,14 +145,26 @@
         </div>
     </div>
 
-    <!-- <section class="sect">
-
-    </section> -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <!-- Table -->
- <!-- <section class="sect">
-    <table style="width: 100%;">
+<!-- <table style="width: 100%;">
         <tr>
             <th class="table-head" style="width: 40%;">NAME</th>
             <th>CONTACT</th>
@@ -151,14 +180,10 @@
            <td>+2347026829639</td>
            <td>Nigeria</td>
         </tr>
-    </table>
- </section> -->
-    <br>
-    <br>
-    <br>
-    <br>
+</table> -->
 
-    <!-- <h2 class="lorem" style="background-color: aqua; text-align: center; padding: 50px; border: 8px solid red; margin: 50px; color: blue;">
+<!-- lorem -->
+    <!-- <h2 class="padding-margin" style="background-color: aqua; text-align: center; padding: 50px; border: 8px solid red; margin: 50px; color: blue;">
         HELLO WORLD
     </h2>
 
@@ -167,7 +192,7 @@
     <br>
 
    <div style="display: flex; justify-content: center;">
-      <div class="group">
+      <div class="learn-hover">
         <h1>
             HEY WORLD
         </h1>
@@ -180,41 +205,12 @@
     <br>
     <br>
 
-    <p class="para">
+    <p class="first-l">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, perspiciatis.
     </p> -->
 
 
 
-
-    <!-- Photo album container mv -->
-    <div style="display: flex; justify-content: center;" class="div-container">
-        <div class="container-2">
-            <img src="rockes b.jpg" alt="beach" width="100%" height="82%" style="object-fit: cover;">
-            <p class="caption">ROCKES BEACH</p>
-        </div>
-    </div>
-
-    <div style="display: flex; justify-content: center;" class="div-container" >
-        <div class="container-2">
-            <img src="sandy b.jpg" alt="beach" width="100%" height="82%" style="object-fit: cover;">
-            <p class="caption">SANDY BEACH</p>
-        </div>
-    </div>
-
-    <div style="display: flex; justify-content: center;" class="div-container" >
-        <div class="container-2">
-            <img src="pebble b.jpg" alt="beach" width="100%" height="82%" style="object-fit: cover;">
-            <p class="caption">PEBBLE BEACH</p> 
-        </div>
-    </div>
-
-    <div style="display: flex; justify-content: center;" class="div-container">
-        <div class="container-2">
-            <img src="barrier island b.jpg" alt="beach" width="100%" height="82%" style="object-fit: cover;">
-            <p class="caption">BARRIER ISLAND BEACH</p>
-        </div>
-    </div>
 
 </body>
 
