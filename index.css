@@ -43,13 +43,13 @@
 .nav-links{
     height: 10vh;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
 }
 
 .nav-links a{
     font-family: "Righteous", sans-serif;
-    text-decoration: double;
+    text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
     margin-left: 30px;
@@ -77,13 +77,13 @@
 
 /* mobile view navigation bar */
 .sidenav {
-    height: 50%;
+    height: 70%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: beige;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -94,10 +94,10 @@
     font-family: "Righteous", sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 90px;
     color: black;
     display: block;
-    transition: 0.5s;
+    transition: 0.3s;
     position: relative;
 }
 
@@ -105,7 +105,7 @@
     content: "";
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: blue;
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -117,15 +117,14 @@
 }
   
 .sidenav a:hover {
-    color: black;
+    color: blue;
 }
 
 .sidenav .closebtn {
-    position: absolute;
     top: 0;
-    right: 25px;
+    right: 1%;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 170px;
 }
 
 .open-nav12{
@@ -173,7 +172,7 @@
     text-align: center;
     top: 30%;
     font-size: 70px;
-    color: whitesmoke;
+    color: white;
     letter-spacing: 4px;
     font-family: "Righteous", sans-serif;
 }
@@ -181,13 +180,13 @@
 .text2{
     position: absolute;
     width: 100%;
-    bottom: 40%;
+    bottom: 35%;
     text-align: center;
-    font-size: 15px;
-    color: rgba(245, 245, 245, 0.954);
+    font-size: 14px;
+    color: whitesmoke;
     letter-spacing: 1px;
     font-family: "Righteous", sans-serif;
-    line-height: 30px;
+    line-height: 33px;
 }
 
 .landing-btn{
@@ -206,7 +205,7 @@
     align-items: center;
     cursor: pointer;
     text-transform: uppercase;
-    height: 30px;
+    height: 40px;
     width: 160px;
     opacity: 1;
     background-color: whitesmoke;
@@ -218,7 +217,7 @@
 .bn54 .bn54span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(192,51,41);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500px;
     letter-spacing: 1px;
     align-items: center;
@@ -276,7 +275,8 @@
 /* photo album section */
 header{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 
 .album-title{
@@ -351,6 +351,7 @@ header{
         font-size: 20px;
         padding-top: 5%;
         line-height: 20px;
+        letter-spacing: 0;
     }
     .landing a{
         position: static;
@@ -368,9 +369,9 @@ header{
         margin-bottom: 0;
     }
     .container{
-        width: 300px;
-        height: 300px;
-        margin: 30px;
+        width: 310px;
+        height: 320px;
+        margin: 5vh;
     }
 }
 
